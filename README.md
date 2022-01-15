@@ -24,6 +24,6 @@ mxlei/openvpn:1
 docker start openvpn
 
 # 若要开机自启动
-docker update --restart=always openvpn
+docker update --restart=on-failure:3 openvpn
 ```
 
