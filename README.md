@@ -9,7 +9,7 @@
 
 ```shell
 # 构建镜像
-docker build -t mxlei/openvpn:1 .
+docker build -t mxlei/openvpn:1.1.1 .
 # 创建容器
 docker create \ 
 --name openvpn \ 
@@ -19,7 +19,7 @@ docker create \
 -e ovpn=/root/default.ovpn \ 
 -e username=xxxx \ 
 -e password=xxxx \ 
-mxlei/openvpn:1
+mxlei/openvpn:1.1.1
 # 启动容器
 docker start openvpn
 

@@ -26,7 +26,7 @@ COPY build/sources.list /etc/apt/sources.list
 
 # 安装需要的软件包
 RUN apt-get update
-RUN apt-get install -y openvpn squid
+RUN apt-get install -y iputils-ping curl openvpn squid
 
 # http监听的默认端口，容器外部映射到此端口
 EXPOSE 3128
